@@ -21,7 +21,7 @@ app.get("/", (req,res)=>{
 })
                                          
 app.post("/upload", upload.single("file"), (req,res)=>{ 
-    res.send("Arquivo enviado com sucesso!!!")
+    res.send("Arquivo enviado com sucesso e salvo na pasta 'uploads' ")
 })
 
 app.listen(8000, ()=>{
